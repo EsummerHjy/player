@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+	</head>
+	<body>
+		<img src="../image/篮球2.jpg" height="300px" class="ball"/>
+		<div id="log">
+			<span id="login">
+				Login
+			</span>
+			<br>
+			<form action="/player_war_exploded/LoginServlet">
+				<span class="l">邮箱：</span>
+				<input type="text" class="email" name="email" placeholder="请输入邮箱">
+				<br>
+				<span class="l">密码：</span>
+				<input type="password" class="pwd" name="password" placeholder="请输入密码">
+				<br>
+				<input type="radio" class="identity" name="identity" value="User"><font>用户</font>
+				<br>
+				<input type="radio" class="identity" name="identity" value="SuperManager"><font>超级管理</font>
+				<br>
+				<input type="submit" src="" value="登录">
+				<a href="register.html"><button type="button">注册</button></a>
+			</form>
+		</div>
+	</body>
+</html>

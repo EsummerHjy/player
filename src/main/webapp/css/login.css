@@ -1,0 +1,44 @@
+input[type='text'],input[type='password']{
+	border-radius: 20px;
+	outline-style: none;
+}
+span#login{
+	color: white;
+	text-shadow: 0 0 10px;
+	font-size:70px;
+	position: relative;
+	left: -100px;
+	top: -20px;
+}
+.l,font{
+	color: white;
+}
+font{
+	position: relative;
+	left: 60px;
+}
+body{
+	background-color: black;
+}
+input[type='submit'],button[type='button']{
+	cursor:pointer;
+	position: relative;
+	left: 50px;
+}
+input[type='radio']{
+	color: white;
+	position: relative;
+	left: 50px;
+}
+div#log{
+	/* text-align: center; */
+	position: absolute;
+	left: 48%;
+	top: 33%;
+	line-height: 40px;
+}
+.ball{
+	position: absolute;
+	left: 29%;
+	top: 35%;
+}

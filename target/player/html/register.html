@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/register.css" />
+		<script>
+			function validate(){
+				var email = document.getElementById("email").value;
+				var password = document.getElementById("password").value;
+				//验证邮箱合法性
+				var pattern = /^([a-zA-Z]|[0-9])\.+@[a-zA-Z0-9]+\.+([a-zA-Z]{2,4})$/;//正则表达式
+				if(email ==''){
+					alert("email不能为空！");
+					return false;
+				}else if(!pattern.test(email)){
+					alert("email格式错误!");
+					return false;
+				}
+				//验证password
+				if(password ==''){
+					alert("password不能为空！");
+					return false;
+				}else if(password.length<6||password.length>12){
+					alert("密码长度在6-12个字符之间!");
+					return false;
+				}
+
+				return true;
+			}
+		</script>
+	</head>
+	<body>
+		<div id="log">
+			<span id="register">
+				Resgister
+			</span>
+			<br>
+				<form action="/player_war_exploded/RegisterServlet" onsubmit = "return validate()">
+				<span class="l">名称：</span>
+				<input type="text" class="email" name="userName" placeholder="请输入名称" value="雷克萨">
+				<br>
+				<span class="l">邮箱：</span>
+				<input type="text" class="email" name="email" placeholder="请输入邮箱" value="1@1.com">
+				<br>
+				<span class="l">密码：</span>
+				<input type="password" class="password" name="password" placeholder="请输入密码" value="123456">
+				<br>
+				<input type="submit" src="" value="确定">
+				<a href="login.html"><button type="button">取消</button></a>
+			</form>
+		</div>
+	</body>
+</html>
